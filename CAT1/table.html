@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KCA UNIVERSITY TIME TABLE</title>
+    <style>
+      body {
+        font-family: Times New Roman, serif;
+      }
+      .center {
+        text-align: center;
+      }
+      table {
+        border-collapse: collapse;
+        margin: 30px auto;
+        width: 800px;
+      }
+      th, td {
+        border: 1px solid #000;
+        padding: 6px 10px;
+        text-align: center;
+        font-size: 1em;
+      }
+      th {
+        font-weight: bold;
+      }
+      .days {
+        font-weight: bold;
+      }
+      .header {
+        font-size: 1.1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h2 style="margin-bottom: 0"><em>KCA UNIVERSITY</em></h2>
+      <h3 style="margin-top: 8px">TIME TABLE</h3>
+    </div>
+    <table>
+      <tr>
+        <th class="header" style="width: 90px;">DAYS</th>
+        <th class="header" style="width: 90px;">MORNIN<br>G</th>
+        <th class="header" style="width: 130px;">MID<br>MORNING</th>
+        <th class="header" style="width: 90px;">LUNCH</th>
+        <th class="header" style="width: 130px;">AFTER NOON</th>
+        <th class="header" style="width: 130px;">EVENING</th>
+      </tr>
+      <tr>
+        <td class="days">MON</td>
+        <td rowspan="5"></td>
+        <td>LECT 1</td>
+        <td rowspan="5"></td>
+        <td>LECT 2</td>
+        <td>LECT 3</td>
+      </tr>
+      <tr>
+        <td class="days">TUE</td>
+        <td>LECT 1</td>
+        <td colspan="2" rowspan="2">TALK</td>
+      </tr>
+      <tr>
+        <td class="days">WED</td>
+        <td rowspan="2">LECT 3</td>
+      </tr>
+      <tr>
+        <td class="days">THUR</td>
+        <td>LECT 2</td>
+        <td>LECT 4</td>
+      </tr>
+      <tr>
+        <td class="days">FRI</td>
+        <td>LECT 5</td>
+        <td colspan="2"></td>
+      </tr>
+    </table>
+  </body>
+</html>

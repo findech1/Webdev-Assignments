@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 500px;
+        margin: 40px auto;
+        border: 2px solid #333;
+        padding: 20px 30px 20px 30px;
+        background: #fff;
+      }
+      h2 {
+        margin-top: 0;
+        font-size: 1.6em;
+        font-weight: bold;
+        
+      }
+      label {
+        font-weight: bold;
+      }
+      .form-row {
+        margin-bottom: 15px;
+      }
+      input[type="text"],
+      input[type="email"] {
+        width: 220px;
+        padding: 3px;
+        margin-left: 10px;
+      }
+      textarea {
+        width: 98%;
+        height: 60px;
+        margin-top: 5px;
+      }
+      .checkbox-group {
+        margin-top: 5px;
+      }
+      .checkbox-group label {
+        font-weight: normal;
+        margin-right: 10px;
+      }
+      .buttons {
+        margin-top: 15px;
+      }
+      .buttons input {
+        width: 160px;
+        padding: 5px;
+        margin-right: 10px;
+        background: #ccc;
+        border: 1px solid #888;
+        font-weight: bold;
+      }
+      .section-title {
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Feedback Form</h2>
+      <p>Please fill out this form to help us improve our site.</p>
+      <form>
+        <div class="form-row">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="form-row">
+          <label for="comments">Comments:</label><br />
+          <textarea id="comments" name="comments"></textarea>
+        </div>
+        <div class="form-row">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-row">
+          <div class="section-title">Things you liked:</div>
+          <div class="checkbox-group">
+            <label
+              ><input type="checkbox" name="liked" value="site" /> Site
+              design</label
+            >
+            <label
+              ><input type="checkbox" name="liked" value="links" /> Links</label
+            >
+            <label
+              ><input type="checkbox" name="liked" value="ease" /> Ease of
+              use</label
+            >
+            <label
+              ><input type="checkbox" name="liked" value="images" />
+              Images</label
+            >
+            <label
+              ><input type="checkbox" name="liked" value="source" /> Source
+              code</label
+            >
+          </div>
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Submit Your Entries" />
+          <input type="reset" value="Clear Your Entries" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
